@@ -1,0 +1,29 @@
+Objects and Object constructors:
+
+Objects as design patterns – Process of organising code into objects for organised and accessible code
+
+ 
+
+Object constructors – Function used to create multiple objects of the same ‘type’
+ 
+and which you use by calling the function with the keyword new.
+ 
+Full example: (basically OOP): 
+ 
+
+Book constructor exercise: 
+Function Book(title,author,pages,read){
+This.title = title;
+This.author = author;
+This.pages = pages;
+This.read = read
+This.info = () => {
+Return This.title; This.author; This.pages;This.read; 
+}};
+
+Javascript prototypes: 
+-	The prototype is another object that the original object inherits from, which is to say, the original object has access to all of its prototype’s methods and properties.
+-	All objects have a prototype and all instances of that object constructor has shared access to their shared prototype (All instances of the player object have shared access to the player prototype).
+-	 Adding methods to the prototype object will make it accessible to all other objects prototypes
+ 
+* Here, we defined the .sayHello function ‘on’ the Player.prototype object. It then became available for the player1 and the player2 objects to use! Similarly, you can attach other properties or functions you want to use on all Player objects by defining them on the objects’ prototyp
